@@ -1,0 +1,38 @@
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+
+# Terraform 상태 및 캐시 파일
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+
+# 민감정보 파일
+.env
+
+# terraform.tfvars (개인 설정)
+terraform.tfvars
+
+# 로그 파일
+*.log
+
+# 임시 파일
+*.tmp
+*.temp
+
+# OS 파일
+.DS_Store
+Thumbs.db
+
+# IDE 파일
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 백업 파일
+*.bak
+*.backup 

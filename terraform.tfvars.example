@@ -1,0 +1,48 @@
+# ========================================
+# AWS 설정
+# ========================================
+region        = "ap-northeast-2"
+profile       = "terraform-user"
+
+# ========================================
+# 도메인 설정
+# ========================================
+hosted_zone_id = "YOUR_HOSTED_ZONE_ID_HERE"
+domain_name    = "your-domain.com"
+subdomain      = "n8n"
+
+# ========================================
+# EC2 설정
+# ========================================
+instance_type = "t2.micro"
+key_name      = "your-key-pair-name"
+
+# ========================================
+# 포트 설정 (선택사항)
+# ========================================
+n8n_port      = 5678
+postgres_port = 5432
+redis_port    = 6379
+
+# ========================================
+# 데이터베이스 설정 (민감정보)
+# ========================================
+postgres_password = "your_secure_postgres_password_here"
+n8n_auth_password = "your_secure_n8n_password_here"
+
+# ========================================
+# 사용 방법
+# ========================================
+# 1. 이 파일을 terraform.tfvars로 복사
+# cp terraform.tfvars.example terraform.tfvars
+#
+# 2. terraform.tfvars에서 실제 값으로 수정
+# 3. Terraform 실행
+# terraform apply
+#
+# ========================================
+# 보안 주의사항
+# ========================================
+# - terraform.tfvars는 Git에 커밋하지 마세요!
+# - 민감한 정보는 반드시 강력한 비밀번호로 변경하세요
+# - 프로덕션 환경에서는 AWS Secrets Manager 사용을 권장합니다 
