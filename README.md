@@ -4,6 +4,18 @@
 
 외부에서 안전하게 접근할 수 있는 n8n 서버를 AWS에 원클릭으로 배포하는 Terraform 프로젝트입니다.
 
+## 🏗️ 사용하는 AWS 스택
+
+이 프로젝트는 다음과 같은 AWS 서비스들을 사용하여 n8n 서버를 안전하고 확장 가능하게 배포합니다:
+
+- **🖥️ EC2 (Elastic Compute Cloud)**: n8n 애플리케이션을 실행하는 가상 서버
+- **🌐 ALB (Application Load Balancer)**: 외부 트래픽을 EC2 인스턴스로 분산
+- **🔒 ACM (AWS Certificate Manager)**: HTTPS를 위한 SSL/TLS 인증서 자동 발급
+- **🌍 Route53**: 도메인 관리 및 DNS 라우팅
+- **🛡️ Security Groups**: 네트워크 보안 규칙 설정
+- **🔧 VPC (Virtual Private Cloud)**: 격리된 네트워크 환경 구성
+- **📦 Docker**: n8n 애플리케이션 컨테이너화 및 배포
+
 ## 💰 비용 정보
 - **도메인 구매**: $15 (1회성)
 - **월 운영비**: $25~30 (도메인 제외)

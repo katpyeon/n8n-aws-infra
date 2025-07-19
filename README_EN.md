@@ -4,6 +4,18 @@ English | [한국어](README.md)
 
 One-click deployment of n8n server on AWS with secure external access using Terraform.
 
+## 🏗️ AWS Stack Used
+
+This project uses the following AWS services to deploy n8n server securely and scalably:
+
+- **🖥️ EC2 (Elastic Compute Cloud)**: Virtual server running the n8n application
+- **🌐 ALB (Application Load Balancer)**: Distributes external traffic to EC2 instances
+- **🔒 ACM (AWS Certificate Manager)**: Automatic SSL/TLS certificate issuance for HTTPS
+- **🌍 Route53**: Domain management and DNS routing
+- **🛡️ Security Groups**: Network security rule configuration
+- **🔧 VPC (Virtual Private Cloud)**: Isolated network environment setup
+- **📦 Docker**: Containerization and deployment of n8n application
+
 ## 💰 Cost Information
 - **Domain Purchase**: $15 (one-time)
 - **Monthly Operating Cost**: $25~30 (excluding domain)
