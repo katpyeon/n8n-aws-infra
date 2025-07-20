@@ -81,6 +81,16 @@ cp terraform.tfvars.example terraform.tfvars
 nano terraform.tfvars
 ```
 
+#### Terraform 초기화
+```bash
+terraform init
+```
+
+#### 배포 계획 확인 (선택사항)
+```bash
+terraform plan
+```
+
 #### 단계별 검증 (권장)
 ```bash
 # 1단계: 네트워킹

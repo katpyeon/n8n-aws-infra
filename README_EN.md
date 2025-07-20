@@ -81,6 +81,16 @@ cp terraform.tfvars.example terraform.tfvars
 nano terraform.tfvars
 ```
 
+#### Terraform Initialization
+```bash
+terraform init
+```
+
+#### Deployment Plan Check (Optional)
+```bash
+terraform plan
+```
+
 #### Step-by-Step Verification (Recommended)
 ```bash
 # Step 1: Networking
